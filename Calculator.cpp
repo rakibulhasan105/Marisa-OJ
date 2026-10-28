@@ -1,0 +1,35 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+using namespace std;
+#define fastio cin.tie(0);ios_base ::sync_with_stdio(0);
+#define ll long long
+
+void phobia()
+{
+    double a,b;
+    char ch;
+    cin >> a >> ch >> b;
+    if(ch == '+') cout << fixed << setprecision(3) <<  a+b;
+    else if(ch =='-') cout << fixed << setprecision(3) <<  a-b;
+    else if(ch=='*') cout << fixed << setprecision(3) <<  a*b;
+    else 
+    {
+        if(b!=0) cout << fixed << setprecision(3) <<  a/b;
+        else cout << "ze";
+    }
+
+    return;
+}
+
+int32_t main()
+{
+    fastio;
+    int tc = 1;
+    // cin >> tc;
+    while (tc--)
+    {
+        phobia();
+    }
+
+    return 0; //         Hey, it's like a phobia..
+}

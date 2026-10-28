@@ -1,0 +1,51 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+using namespace std;
+#define fastio  cin.tie(0); ios_base ::sync_with_stdio(0);
+#define ll long long
+
+void phobia()
+{
+   ll a,b,c;
+   cin >> a >> b >> c;
+   if(a < b && a < c)
+   {
+     cout << a << " ";
+     if(b>c)
+     {
+        cout << c << " " << b;
+     }else cout << b << " " << c;
+     
+   }
+   else if(b < a && b < c)
+   {
+     cout << b << " ";
+     if(a>c)
+     {
+        cout << c << " " <<  a;
+     }else cout << a << " " << c;
+     
+   }
+   else 
+   {
+    cout << c  << " ";
+     if(a>b) cout << b << " " << a;
+     else cout << a << " " << b;
+     
+   }
+    
+ return;
+}
+
+int32_t main()
+{
+    fastio;
+    int tc = 1;
+   // cin >> tc;
+    while (tc--)
+    {
+        phobia();
+    }
+
+    return 0; //         Hey, it's like a phobia..
+}
